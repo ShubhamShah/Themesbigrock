@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<!-- Created by Shubham Shah -->
+    <meta charset="utf-8">
+    <title>Reseller Program</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="../https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="../style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="../style.responsive.css" media="all">
+
+
+    <script src="../jquery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script.responsive.js"></script>
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainertmp33B").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatortmp33B"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-slidecontainertmp33B {
+    position: relative;
+        width: 192px;
+    height: 217px;
+        }
+
+.art-slidecontainertmp33B .art-slide-item
+{
+
+}
+
+
+
+.art-slidecontainertmp33B .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainertmp33B .active, .art-slidecontainertmp33B .next, .art-slidecontainertmp33B .prev {
+    display: block;
+}
+
+.art-slidecontainertmp33B .active {
+    opacity: 1;
+}
+
+.art-slidecontainertmp33B .next, .art-slidecontainertmp33B .prev {
+    width: 100%;
+}
+
+.art-slidecontainertmp33B .next.forward, .art-slidecontainertmp33B .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainertmp33B .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainertmp33B .active.back {
+    opacity: 0;
+}
+
+
+.art-slidetmp33B0 {
+    background-image:  url('../images/slidetmp33B0.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.art-slidetmp33B1 {
+    background-image:  url('../images/slidetmp33B1.jpg');
+        background-size:  100%;
+        background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigatortmp33B {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 193px;
+  left: 77.08%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatortmp33B
+{
+background: #B9C2CB;background: linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(232, 235, 238, 0.6) 0, rgba(138, 153, 168, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatortmp33B > a
+{
+background: #728597;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatortmp33B > a.active
+{
+background: #FA681E;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatortmp33B > a:hover
+{
+background: #455B73;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style>
+
+
+</head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+
+    <div class="art-shapes">
+
+            </div>
+
+
+
+
+                
+                    
+</header>
+<div class="art-sheet clearfix">
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="../home.html" class="">Home</a><ul class=""><li><a href="../home/new-page.html" class="">Get a Domain</a><ul class=""><li><a href="../home/new-page/bulk-domain-registration.html" class="">Bulk  Domain Registration</a></li><li><a href="../home/new-page/premium-domains.html" class="">Premium Domains</a></li><li><a href="../home/new-page/domain-name-prices.html" class="">Domain Name Prices</a></li></ul></li><li><a href="../home/new-page-2.html" class="">Host Your Domain</a><ul class=""><li><a href="../home/new-page-2/windows-hosting.html" class="">WINDOWS HOSTING</a></li><li><a href="../home/new-page-2/linux-hosting.html" class="">Linux Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting.html" class="">Specialized Hosting</a><ul class=""><li><a href="../home/new-page-2/specialized-hosting/wordpress-hosting.html" class="">Wordpress Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting/cms-hosting.html" class="">CMS Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting/e-commerece-hosting.html" class="">E-Commerece Hosting</a></li></ul></li><li><a href="../home/new-page-2/reseller-hosting.html" class="">Reseller Hosting</a><ul class=""><li><a href="../home/new-page-2/reseller-hosting/windows-reseller.html" class="">Windows Reseller</a></li><li><a href="../home/new-page-2/reseller-hosting/linux-reseller.html" class="">Linux Reseller</a></li></ul></li></ul></li><li><a href="../home/build-a-website.html" class="">Build a Website</a><ul class=""><li><a href="../home/build-a-website/diy.html" class="">DIY</a></li><li><a href="../home/build-a-website/professional-web-designers.html" class="">Professional Web-Designers</a></li><li><a href="../home/build-a-website/digierts-ssl.html" class="">Digierts &amp; SSL</a></li></ul></li><li><a href="../home/vps.html" class="">VPS</a></li><li><a href="../home/get-email.html" class="">Get Email</a><ul class=""><li><a href="../home/get-email/personal-email.html" class="">Personal Email</a></li><li><a href="../home/get-email/bussiness-emails.html" class="">Bussiness Email's</a></li></ul></li></ul></li><li><a href="../partner-with-us.html" class="active">Partner With Us</a><ul class="active"><li><a href="../partner-with-us/affilate-program.html" class="">Affilate Program</a></li><li><a href="../partner-with-us/design-xchange-program.html" class="">Design Xchange Program</a></li><li><a href="../partner-with-us/refer-a-friend.html" class="">Refer a Friend</a></li><li><a href="../partner-with-us/reseller-program.html" class="active">Reseller Program</a></li></ul></li><li><a href="../services.html">Services</a></li><li><a href="../tech-support.html">Tech Support</a></li><li><a href="../contact-us.html">Contact Us</a></li><li><a href="../sitemap.html">Sitemap</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader">Reseller Program</h2>
+								<br />
+								<br />
+								<h3><p>More About <b><a href="#">Reseller Program</a></b></p></h3>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><p><br/></p></div>
+
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Search</h3>
+        </div>
+        <div class="art-blockcontent"><div>
+  <form action="#" class="art-search" method="get" name="searchform">
+    <input type="text" value="" name="s" />
+    <input type="submit" value="Search" name="search" class="art-search-button" />
+  </form>
+</div></div>
+</div><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockheader">
+            <h3 class="t">Menu</h3>
+        </div>
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="../home.html" class="">Home</a><ul class=""><li><a href="../home/new-page.html" class="">Get a Domain</a><ul class=""><li><a href="../home/new-page/bulk-domain-registration.html" class="">Bulk  Domain Registration</a></li><li><a href="../home/new-page/premium-domains.html" class="">Premium Domains</a></li><li><a href="../home/new-page/domain-name-prices.html" class="">Domain Name Prices</a></li></ul></li><li><a href="../home/new-page-2.html" class="">Host Your Domain</a><ul class=""><li><a href="../home/new-page-2/windows-hosting.html" class="">WINDOWS HOSTING</a></li><li><a href="../home/new-page-2/linux-hosting.html" class="">Linux Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting.html" class="">Specialized Hosting</a><ul class=""><li><a href="../home/new-page-2/specialized-hosting/wordpress-hosting.html" class="">Wordpress Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting/cms-hosting.html" class="">CMS Hosting</a></li><li><a href="../home/new-page-2/specialized-hosting/e-commerece-hosting.html" class="">E-Commerece Hosting</a></li></ul></li><li><a href="../home/new-page-2/reseller-hosting.html" class="">Reseller Hosting</a><ul class=""><li><a href="../home/new-page-2/reseller-hosting/windows-reseller.html" class="">Windows Reseller</a></li><li><a href="../home/new-page-2/reseller-hosting/linux-reseller.html" class="">Linux Reseller</a></li></ul></li></ul></li><li><a href="../home/build-a-website.html" class="">Build a Website</a><ul class=""><li><a href="../home/build-a-website/diy.html" class="">DIY</a></li><li><a href="../home/build-a-website/professional-web-designers.html" class="">Professional Web-Designers</a></li><li><a href="../home/build-a-website/digierts-ssl.html" class="">Digierts &amp; SSL</a></li></ul></li><li><a href="../home/vps.html" class="">VPS</a></li><li><a href="../home/get-email.html" class="">Get Email</a><ul class=""><li><a href="../home/get-email/personal-email.html" class="">Personal Email</a></li><li><a href="../home/get-email/bussiness-emails.html" class="">Bussiness Email's</a></li></ul></li></ul></li><li><a href="../partner-with-us.html" class="active">Partner With Us</a><ul class="active"><li><a href="../partner-with-us/affilate-program.html" class="">Affilate Program</a></li><li><a href="../partner-with-us/design-xchange-program.html" class="">Design Xchange Program</a></li><li><a href="../partner-with-us/refer-a-friend.html" class="">Refer a Friend</a></li><li><a href="../partner-with-us/reseller-program.html" class="active">Reseller Program</a></li></ul></li><li><a href="../services.html">Services</a></li><li><a href="../tech-support.html">Tech Support</a></li><li><a href="../contact-us.html">Contact Us</a></li><li><a href="../sitemap.html">Sitemap</a></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Payment Methods</h3>
+        </div>
+        <div class="art-blockcontent"><p>We also accept Indian Debit Cards and Net Banking<br>
+See all supported <a href="www.bigrock.in/support/payment-options.html">payment options</a>.</p><p>
+</p><ul>
+<li><a href="#">Visa</a></li>
+<li><a href="#">American Express.</a></li>
+<li><a href="#">Mastercard</a></li>
+<li><a href="#">Paypal</a></li>
+</ul>
+<p>
+</p></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Our Customer's</h3>
+        </div>
+        <div class="art-blockcontent"><p><img src="http://www.34cecc66-8fbd-402a-a4f2-c56ecdaef3e8-image.com/.webarchive/" class=""><br></p></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">My Shopping Cart</h3>
+        </div>
+        <div class="art-blockcontent"><ul id="domainList" class="cartList">
+<li class="empty">Your cart is empty :(<br></li></ul><p>----------------------------------------------</p><div style="margin-left: 2em">
+</div>
+<div class="amountWrapper">
+Total Amount:<br>
+<span id="total_curr">
+<span class="WebRupee">Rs.</span> <span id="page_total">0</span></span></div><div class="amountWrapper" style="text-align: center;">&nbsp;<a href="" class="art-button">Checkout</a>&nbsp;<span id="total_curr"><span id="page_total"><br></span></span></div><p>
+ 
+</p></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Discount</h3>
+        </div>
+        <div class="art-blockcontent"><p></p><div id="tmp33B" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainertmp33B" data-width="192" data-height="217">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slidetmp33B0">
+
+</div>
+<div class="art-slide-item art-slidetmp33B1">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatortmp33B" data-left="77.08">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Connect With Us</h3>
+        </div>
+        <div class="art-blockcontent"><p>&nbsp;<a href="" class="art-rss-tag-icon" style="line-height: 32px;">Rss</a>&nbsp;<br></p><p>&nbsp;<a href="" class="art-facebook-tag-icon" style="line-height: 32px;">Facebook</a>&nbsp;<br></p><p>&nbsp;<a href="" class="art-twitter-tag-icon" style="line-height: 32px;">Twitter</a>&nbsp;<br></p><p>&nbsp;<img width="32" height="32" alt="" class="art-lightbox" src="../images/getImage86b8.jpg"><a href="#">Join Us On G+</a><br></p><p><br></p></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Support</h3>
+        </div>
+        <div class="art-blockcontent"><p></p><ul><li>&nbsp;<a href="" class="art-button">LIVE CHAT</a>&nbsp;<span style="font-weight: bold; color: rgb(225, 78, 5); text-shadow: rgba(23, 23, 23, 0.808594) 1.4px 1.4px 0px;"></span></li><li><span style="font-weight: bold; text-shadow: rgba(23, 23, 23, 0.808594) 1.4px 1.4px 0px; color: #E14E05;">Support</span></li><li><span style="font-weight: bold; text-shadow: rgba(23, 23, 23, 0.808594) 1.4px 1.4px 0px; color: #E14E05;">Contact-Us</span></li><li><span style="font-weight: bold; text-shadow: rgba(23, 23, 23, 0.808594) 1.4px 1.4px 0px; color: #E14E05;">Call Us Now</span>&nbsp;<br><img width="18" height="18" alt="" class="art-lightbox" src="../images/phone-2.gif"><span style="font-weight: bold; color: #178D02;">1-800-200-7625</span><br><span style="color: rgb(165, 165, 165); vertical-align: middle; font-size: 11px;">(Sales: India Toll Free)</span></li></ul><p>
+ 
+</p></div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p><a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">Legal</a> | <a href="#">Sitemap</a> | <a href="#">Careers</a>| <a href="#">Tech Support</a></p>
+<p>Copyright © 2013. All Rights Reserved.</p>
+<p><a href="#" style=" font-weight: bold;"><span style=" color: rgb(63, 83, 105);">Bigrock ™</span></a></p>
+</footer>
+
+    </div>
+    </div>
+</body>
+</html>
